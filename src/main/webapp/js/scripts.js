@@ -13,7 +13,7 @@ function getall() {
             .then(data => {
                 // Inside this callback, and only here, the response data is available
                 window.localStorage.setItem("thing", data);
-                document.getElementById("pastebox").innerHTML = JSON.stringify(data);
+                document.getElementById("pasteBox").innerHTML = JSON.stringify(data);
                 /* data now contains the response, converted to JavaScript
                  Observe the output from the log-output above
                  Now, just build your DOM changes using the data*/
@@ -27,7 +27,7 @@ function getcount() {
             .then(data => {
                 // Inside this callback, and only here, the response data is available
                 window.localStorage.setItem("thing", data);
-                document.getElementById("pastebox").innerHTML = "<h1>Der er i alt"+data.count +" i denne film database </h1>";
+                document.getElementById("pasteBox").innerHTML = "<h1>Der er i alt"+data.count +" i denne film database </h1>";
                 /* data now contains the response, converted to JavaScript
                  Observe the output from the log-output above
                  Now, just build your DOM changes using the data*/
@@ -42,7 +42,7 @@ function getid() {
             .then(data => {
                 // Inside this callback, and only here, the response data is available
                 window.localStorage.setItem("thing", data);
-                document.getElementById("pastebox").innerHTML = "<h1>Der er filmen"+data.name +" i denne film er der"+ data.actors.join(",")+ "  </h1>";
+                document.getElementById("pasteBox").innerHTML = "<h1>Der er filmen"+data.name +" i denne film er der"+ data.actors.join(",")+ "  </h1>";
                 /* data now contains the response, converted to JavaScript
                  Observe the output from the log-output above
                  Now, just build your DOM changes using the data*/
