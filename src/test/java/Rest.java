@@ -70,8 +70,8 @@ public class Rest {
         try {
             em.getTransaction().begin();
             em.createNamedQuery("RenameMe.deleteAllRows").executeUpdate();
-            em.persist(new Movie(2, "ree", "res"));
-            em.persist(new Movie(1, "ree", "res"));
+            em.persist(new Movie(2, "ree", new String[]{"Ulla Tørnæse", "Pia Køl", "Freddy Fræk"}));
+            em.persist(new Movie(1, "ree", new String[]{"Ulla Tørnæse", "Pia Køl", "Freddy Fræk"}));
 
             em.getTransaction().commit();
         } finally {

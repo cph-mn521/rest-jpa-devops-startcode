@@ -23,15 +23,15 @@ public class Movie implements Serializable {
     private Long id;
     private int year;
     private String name;
-    private String actors;
+    private String[] actors;
     public Movie() {
     }
 
     
-    public Movie(int year, String name, String actors) {
+    public Movie(int year, String name, String[] actors) {
         this.year = year;
         this.name = name;
-        this.actors = actors;
+        this.actors  = actors;
     }
 
     public Long getId() {
@@ -58,11 +58,11 @@ public class Movie implements Serializable {
         this.name = name;
     }
 
-    public String getActors() {
+    public String[] getActors() {
         return actors;
     }
 
-    public void setActors(String actors) {
+    public void setActors(String[] actors) {
         this.actors = actors;
     }
      
