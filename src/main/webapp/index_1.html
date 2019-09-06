@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <title>MATHERADICAL!</title>
+
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="topnav-header">
+                <a href="index.jsp"><h3>Velkommen til min dev ops side. her er der alt mulig lækkert ift. at gøre.... stuff.</h3></a>            
+            </div>
+        </div>
+        <nav id="sidebar">
+            <ul id="sideMenu" class="list-unstyled components" >
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Onsdag Torsdag Javascript</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="https://www.matheradical.dk/w3">Side 1</a>
+                        </li>
+                        <li>
+                            <a href="https://www.matheradical.dk/w3/pages/p2.html">side 2</a>
+                        </li>
+                        <li>
+                            <a href="https://www.matheradical.dk/w3p/pages/p3.html">side 3</a>
+                        </li>
+                        <li>
+                            <a href="https://www.matheradical.dk/w3/pages/p4.html">side 4</a>
+                        </li>
+                        <li>
+                            <a href="https://www.matheradical.dk/w3/pages/torsdag.html">torsdag</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <h1> Prøv at fetche noget fra min api!</h1>
+            <input id="id">
+            <button onclick="getall()">get all</button>
+            <button>get fra idd</button>
+            <button>Count</button>
+
+            <div id="pasteBox">
+
+            </div>
+
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
